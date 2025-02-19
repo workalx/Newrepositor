@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мої контакти</title>
+    <link rel="stylesheet" href="style-contact.css">
+</head>
+<body>
+    <div class="overlay"></div> <!-- Додайте цей рядок для затемнення -->
+    <div class="content"> <!-- Додайте цей клас для основного змісту -->
+    <header class="site-header">
+        <div class="logo">
+            <img src="Logo.html/1732728068927.jpg" alt="Логотип">
+        </div>
+        <nav class="navigation">
+            <a href="#about">Про мене</a>
+            <a href="#skills">Навички</a>
+            <a href="#contacts">Контакти</a>
+        </nav>
+    </header>
+    <section id="about" class="grid-container">
+        <!-- Вміст секції "Про мене" -->
+      
+    </section>
+    
+    <section class="grid-container">
+        <!-- Блок опису та фото -->
+        <div class="info-block">
+            <div class="block-content">
+                <div class="description">
+                    <h1 class="centered-heading">Hello, I'm Alex</h1>
+                    <h3 class="centered-heading">It's Me</h3>
+                </div>
+                <div class="collage-container">
+                    <img class="collage-image" src="Logo.html/roc.jpg" alt="Фото 1">
+                    <img class="collage-image" src="Logo.html/por.jpg" alt="Фото 2">
+                    <img class="collage-image" src="Logo.html/op.jpg" alt="Фото 3">
+                    <img class="collage-image" src="Logo.html/z.jpg" alt="Фото 4">
+                </div>
+            </div>
+        </div>
+        <div class="about">
+           <h2>About me:</h2><h3> My name is Alex Khalus,I am 18 years old. I from Ukraine. Now I live in Canada. I like coding and study about this. </h3>
+        </div>
+    </section>
+    
+    <section id="skills" class="grid-container">
+        <!-- Вміст секції "Навички" -->
+        <!-- Блок навичок -->
+        <div class="info-block">
+            <div class="info-text">
+                <h1>Мови програмування</h1>
+                <ul class="skills-list">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contacts" class="grid-container">
+        <!-- Блок з кнопками соцмереж -->
+        <div class="info-block">
+            <div class="info-text">
+                <h1>Мої контакти</h1>
+                <div class="social-buttons">
+                    <a href="https://www.instagram.com/oleksandr.khalus?igsh=MW5wNTZwbmw1am9tOA==" target="_blank" class="button">Instagram</a>
+                    <a href="https://t.me/sanjakh" target="_blank" class="button">Telegram</a>
+                    <a href="https://mail.google.com/mail/u/0/?hl=en#inbox?compose=GTvVlcRzDDHxZfMlhpJKpphpSKTTKnwWqdxTWNxjkjcMFrZLmCxrSxRgCzmgwbllbfztjGQGnHXvd" class="button">Email</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        window.addEventListener('scroll', function () {
+            document.querySelectorAll('.info-block').forEach(block => {
+                const position = block.getBoundingClientRect().top;
+                const screenHeight = window.innerHeight;
+                if (position < screenHeight * 0.9) {
+                    block.classList.add('show');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
